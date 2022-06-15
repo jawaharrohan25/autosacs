@@ -1,3 +1,4 @@
+# Functions
 def rot47(s):
     x = []
     for i in range(len(s)):
