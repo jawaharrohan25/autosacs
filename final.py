@@ -36,4 +36,18 @@ def cipher_encryption(message):
         temp = ord(message[i]) + key
         if ord(message[i]) == 32:
             encryp_text += " "
+            
+# SEQ 1
+with open("encrypted.txt") as f:
+    contents = f.read()
+
+    print(rot47(contents))
+    
+    with open('decrypted.txt', 'w') as f:
+        f.write(rot47(contents))
+        
+# SEQ 2
+with open("output.txt") as f:
+    contents = f.read()
+cipher_encryption(contents)
      
